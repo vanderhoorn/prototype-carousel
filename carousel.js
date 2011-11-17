@@ -143,6 +143,9 @@ Carousel = Class.create(Abstract, {
     default:
       var transition;
       switch (this.options.transition) {
+      case 'linear':
+        transition = Effect.Transitions.linear;
+        break;
       case 'spring':
         transition = Effect.Transitions.spring;
         break;
